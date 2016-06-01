@@ -11,6 +11,7 @@
 html, body {
 margin:0;
 padding:0;
+overflow-y: hidden;
 }
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
@@ -27,6 +28,15 @@ padding:0;
 	p{
     		visibility:visible;
 	}
+.footer{
+position: fixed;
+font-size: 70%;
+bottom: 10;
+display: inline;
+}
+a {
+color: #5882C4;
+}
     </style>
 
     <!--
@@ -39,10 +49,11 @@ padding:0;
   </head>
   <body>
     <div id="status">
-<iframe src="https://www.minds.com/notifications" width="398" height="500" frameborder="0" id="frame"></iframe> 
+<iframe src="https://www.minds.com/notifications" width="400" height="535" frameborder="0" id="frame"></iframe> 
 <br /> <br /><br /><br /><br />
-<font size="1"> <a href="mailto:one.snapp8@gmail.com?Subject=Minds%20Support" target="_top">Contact us</a></font>
+<span class="footer">
+<a href="mailto:one.snapp8@gmail.com?Subject=Minds%20Support" target="_top">Contact us</a>
+<a href="https://chrome.google.com/webstore/detail/minds-notification-extens/ihbpggebnhnoeedklmddabkhnighpkgm" target="_blank"> Rate this extension </a>
+</span>
 </body>
 </html>
-
-
