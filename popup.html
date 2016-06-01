@@ -1,0 +1,48 @@
+<!--
+<!doctype html>
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Minds status</title>
+    <style>
+html, body {
+margin:0;
+padding:0;
+}
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+	background-color: white;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+	p{
+    		visibility:visible;
+	}
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="status">
+<iframe src="https://www.minds.com/notifications" width="398" height="500" frameborder="0" id="frame"></iframe> 
+<br /> <br /><br /><br /><br />
+<font size="1"> <a href="mailto:one.snapp8@gmail.com?Subject=Minds%20Support" target="_top">Contact us</a></font>
+</body>
+</html>
+
+
