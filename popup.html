@@ -12,31 +12,42 @@ html, body {
 margin:0;
 padding:0;
 overflow-y: hidden;
-width: 400;
+width: 450px;
+height: 700px;
+display: inline-block;
+font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+font-size: 100%;
+background-color: white;
 }
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-	background-color: white;
-      }
+
       #status {
         /* avoid an excessively wide status text */
         white-space: pre;
         text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
       }
-	p{
-    		visibility:visible;
-	}
-.footer{
-position: fixed;
-font-size: 70%;
-bottom: 10;
-display: inline;
-}
+    p{
+            visibility:visible;
+    }
+
 a {
 color: #5882C4;
+}
+.footer {
+display: inline-block !important;
+width: 100%;
+background-color:#C1CAD1;
+bottom:0;
+}
+.bloc {
+padding: 20;
+display: inline-block;
+background-color: #C1CAD1;
+min-width:60;
+text-decoration:none;
+color:#FEFEFE;
+}
+.rightFloat {
+float:right;
 }
     </style>
 
@@ -46,15 +57,14 @@ color: #5882C4;
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-    <script src="popup.js"></script>
   </head>
   <body>
-    <div id="status">
-<iframe src="https://www.minds.com/notifications" width="420" height="535" frameborder="0" id="frame"></iframe> 
-<br /> <br /><br /><br /><br />
-<span class="footer">
-<a href="mailto:one.snapp8@gmail.com?Subject=Minds%20Support" target="_top">Contact us</a>
-<a href="https://chrome.google.com/webstore/detail/minds-notification-extens/ihbpggebnhnoeedklmddabkhnighpkgm" target="_blank"> Rate this extension </a>
+
+<center><iframe src="https://www.minds.com/notifications" width="450" height="535" frameborder="0" id="frame"></iframe></center>
+
+<div class="footer" width: 100%;">
+  <span><a href="mailto:one.snapp8@gmail.com?Subject=Minds%20Support" target="_top" class="bloc">Contact us</a></span>
+  <span><a href="https://chrome.google.com/webstore/detail/minds-notification-extens/ihbpggebnhnoeedklmddabkhnighpkgm" target="_blank" class="bloc rightFloat"> Rate this extension </a>
 </span>
 </body>
 </html>
