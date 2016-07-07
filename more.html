@@ -1,0 +1,61 @@
+<!-- <!doctype html>
+This page is shown when the extension button is clicked, because the
+"browser_action" field in manifest.json contains the "default_popup" key with
+value "popup.html".
+-->
+<html>
+<head>
+<title>Minds status</title>
+<style>html, body {
+margin:1;
+padding:0;
+overflow-y: hidden;
+width: 450px;
+height: 700px;
+display: inline-block;
+font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+font-size: 100%;
+background-color: #D0D8DE;
+}
+
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+      }
+    p{
+            visibility:visible;
+    }
+
+a {
+color: #5882C4;
+text-decoration:none;
+font-size:25;
+color:black;
+}
+.footer {
+width: 100%;
+background-color:#C9D2D8;
+}
+.bloc {
+padding: 20;
+background-color:#C9D2D8;
+text-decoration:none;
+color:#efefef;
+border:1;
+border-color:black;
+}
+</style>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+<br />
+<div class="footer" width: 100%;">
+  <span><a href="https://github.com/One-SNapp/Minds-Notification-Extension" class=".bloc"><i class="fa fa-github" aria-hidden="true" style="color:grey !important; font-size:35 !important;"></i> Find this on Github</a></span>
+<br /><br />
+  <span><a href="/donate.html" class=".bloc"><i class="fa fa-btc" aria-hidden="true" style="color:grey !important;font-size:35 !important;"></i></i> Donate</a></span>
+<br /><br />
+<span><a href="/popup.html" class=".bloc"><i class="fa fa-arrow-left" aria-hidden="true"  style="color:grey !important;font-size:35 !important;"></i></i> Back</a></span>
+</div>
+</body>
+</html>

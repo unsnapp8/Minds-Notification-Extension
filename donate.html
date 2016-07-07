@@ -1,0 +1,56 @@
+<!-- <!doctype html>
+This page is shown when the extension button is clicked, because the
+"browser_action" field in manifest.json contains the "default_popup" key with
+value "popup.html".
+-->
+<html>
+<head>
+<title>Minds status</title>
+<style>html, body {
+margin:1;
+padding:0;
+overflow-y: hidden;
+width: 450px;
+height: 710px;
+display: inline-block;
+font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+font-size: 100%;
+background-color: #D0D8DE;
+}
+
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+      }
+    p{
+            visibility:visible;
+    }
+
+.btcaddress {
+font-size: 20;
+}
+.thanks{
+font-size:15;
+//thank you!
+}
+a {
+color: #5882C4;
+text-decoration:none;
+font-size:25;
+color:black;
+}
+</style>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+<div class="footer" width: 100%;">
+<h1><i class="fa fa-btc" aria-hidden="true"></i><span class="thanks">Any amount is highly appreciated! Thank you!!</span></h1>
+<h2>Please donate to: <br /><span class="btcaddress">13L9U4S5MBEK4dEW9LQbv6jvjBTMVudZaS</span</h2>
+<h3>Or scan this QR code for the bitcoin address:
+<br />
+<img src="bitcoinaddress.jpg"></h3>
+<p><i class="fa fa-arrow-left" aria-hidden="true" style="color:grey !important;font-size:35 !important;"></i><a href="more.html"> Back</a></p>
+</div>
+</body>
+</html>
